@@ -1,13 +1,13 @@
 import React from 'react'
-import { taylorMade } from '../../golfBallDB.js'
+import { wilsonStaff } from '../../golfBallDB.js'
 import uniqid from 'uniqid'
 
-const Taylormade = () => {
+const WilsonStaff = () => {
   return (
     <section className='section skills'>
       <div className='ballList'>
-        {taylorMade.map((ball) => (
-          <div style={{ width: '16rem', height:'auto' }} key={uniqid()} className='ballList-item slit-in-vertical'>
+        {wilsonStaff.map((ball) => (
+          <div style={{ width: '18rem' }} key={uniqid()} className='ballList-item slit-in-vertical'>
             <div className='imgDiv'>
               <img variant="top" src={ball.imgSrc} className='ballImg' />
             </div>
@@ -16,7 +16,7 @@ const Taylormade = () => {
               <div className='centerText ballModel'>{ball.ballModel}</div>
               <div className='centerText ballDesc'>{ball.description}</div>
               <div>
-                <button className='buyLink'><a href={ball.buyLink} target="_blank" rel="noopener noreferrer">Buy Now</a></button>
+                <button className='buyLink'><a href={ball.buyLink} target="_blank" rel="noopener noreferrer">Amazon</a></button>
               </div>
             </div>
           </div>
@@ -26,4 +26,4 @@ const Taylormade = () => {
   )
 }
 
-export default Taylormade
+export default WilsonStaff

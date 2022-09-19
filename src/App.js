@@ -1,10 +1,11 @@
 import './App.css';
-import Welcome from './components/Welcome/Welcome'
+import Brands from './components/Brands/Brands'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className='background'>
-      <Welcome />
+      <Brands />
     </div>
   );
 }
