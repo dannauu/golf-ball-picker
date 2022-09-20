@@ -7,7 +7,7 @@ const Maxfli = () => {
     <section className='section skills'>
       <div className='ballList'>
         {maxFli.map((ball) => (
-          <div style={{ width: '18rem' }} key={uniqid()} className='ballList-item slit-in-vertical'>
+          <div style={{ width: '18rem', height:'auto' }} key={uniqid()} className='ballList-item slit-in-vertical'>
             <div className='imgDiv'>
               <img variant="top" src={ball.imgSrc} className='ballImg' />
             </div>
@@ -16,7 +16,7 @@ const Maxfli = () => {
               <div className='centerText ballModel'>{ball.ballModel}</div>
               <div className='centerText ballDesc'>{ball.description}</div>
               <div>
-                <button className='buyLink'><a href={ball.buyLink} target="_blank" rel="noopener noreferrer">Amazon</a></button>
+                <button className='buyLink'><a href={ball.buyLink} target="_blank" rel="noopener noreferrer">Buy Now</a></button>
               </div>
             </div>
           </div>

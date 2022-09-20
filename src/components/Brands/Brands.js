@@ -1,6 +1,4 @@
-import { render } from '@testing-library/react'
-import { React, createElement, useState } from 'react'
-import { srixon, vice, volvik, maxFli, taylorMade, wilsonStaff, kirkland, pinnacle, topFlite, bridgestone, titleist, callaway } from '../../golfBallDB.js'
+import { React, useState } from 'react'
 import Taylormade from '../Taylormade/Taylormade.js'
 import Titleist from '../Titleist/Titleist.js'
 import Volvik from '../Volvik/Volvik.js'
@@ -20,11 +18,10 @@ const Brands = () => {
     const [isVisible, setisVisible] = useState(true)
     const [backBtn, setbackBtn] = useState(false)
     const [comp, setComp] = useState('')
-    const [test, setTest] = useState(false)
 
     return (
         <>
-            <h1 className='centerText welcomeMsg bounce-top' style={{ display: isVisible ? "block" : "none" }}>Choose a brand</h1>
+            <h1 className='centerText welcomeMsg bounce-top' style={{ display: isVisible ? "block" : "none" }}>Welcome, choose a brand:</h1>
             <div className='brandBtnDiv' id='choices' style={{ display: isVisible ? "block" : "none" }}>
                 <button className='Taylormade brandBtn' name='taylormade' onClick={(e) => { setComp(e.target.name); setisVisible(false); setbackBtn(true) }}></button>
                 <button className='Callaway brandBtn' name='callaway' onClick={(e) => { setComp(e.target.name); setisVisible(false); setbackBtn(true) }}></button>
@@ -40,7 +37,6 @@ const Brands = () => {
                 <button className='Srixon brandBtn' name='srixon' onClick={(e) => { setComp(e.target.name); setisVisible(false); setbackBtn(true) }}></button>
             </div>
             <div className='backBtnDiv'>
-                {test === true && (<Brands />)}
                 <button className='backBtn' onClick={(e) => { window.location.reload(); setbackBtn() }} style={{ display: backBtn ? "block" : "none" }}>Choose Different Brand</button>
             </div>
 
