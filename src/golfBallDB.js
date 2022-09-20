@@ -443,12 +443,7 @@ const srixon = [
         buyLink: 'https://www.amazon.com/Srixon-Ball-Q-Star-6-White/dp/B09MTYLF28/ref=sr_1_3?crid=MHQSDIL0GRYZ&keywords=srixon+q+star&qid=1663538331&sprefix=srixon+q+star%2Caps%2C95&sr=8-3',
         imgSrc: require('./assets/img/ballPics/qStar.jpg')
     },
-    {
-        ballModel: 'Z-Star XV',
-        description: '',
-        buyLink: 'https://www.amazon.com/Srixon-Ball-Z-Star-White-10311204/dp/B08R6KHWVS/ref=sr_1_1?crid=34P5IH9EPTPLI&keywords=srixon+z+star+xv&qid=1663538364&sprefix=srixon+z+star+xv%2Caps%2C86&sr=8-1',
-        imgSrc: require('./assets/img/ballPics/zStarXV.jpg')
-    }
+    
 
 ]
 
