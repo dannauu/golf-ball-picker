@@ -445,3 +445,38 @@ h1 {
   color: black;
 
 }
+
+@media screen and (max-width: 580px) {
+
+  .brandBtn {
+    border: none;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin: 2px; */
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+  }
+
+  .backBtn {
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    transition: all .2s ease-in-out; 
+  }
+
+  .ballList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(./assets/img/landingPic.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
